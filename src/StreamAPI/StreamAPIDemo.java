@@ -21,15 +21,15 @@ public class StreamAPIDemo {
     }
     private static List<Student> getStudent(){
         return List.of(
-                new Student(132,"Antonio", 20, Gender.MALE),
-                new Student(322,"Alina Smith", 18, Gender.FEMALE),
-                new Student(542,"Alina Smith", 26, Gender.MALE),
-                new Student(252,"Alina Smith", 33, Gender.FEMALE),
-                new Student(572,"Alina Smith", 19, Gender.MALE),
-                new Student(213,"Alina Smith", 38, Gender.FEMALE),
-                new Student(112,"Alina Smith", 20, Gender.MALE),
-                new Student(752,"Alina Smith", 22, Gender.FEMALE),
-                new Student(432,"Alina Smith", 27, Gender.MALE)
+                new Student(132,"Long", 20, Gender.MALE),
+                new Student(322,"Khanh", 18, Gender.FEMALE),
+                new Student(542,"Luy", 26, Gender.MALE),
+                new Student(252,"Cuong", 33, Gender.FEMALE),
+                new Student(572,"Nhan", 19, Gender.MALE),
+                new Student(213,"Trong", 38, Gender.FEMALE),
+                new Student(112,"Tuan", 20, Gender.MALE),
+                new Student(752,"Vinh", 22, Gender.FEMALE),
+                new Student(432,"Ngoc", 27, Gender.MALE)
         );
     }
 }
