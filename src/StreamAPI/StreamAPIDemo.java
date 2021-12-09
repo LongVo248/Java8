@@ -20,6 +20,13 @@ public class StreamAPIDemo {
                 .filter(person -> person.getAge()>20)
                 .count();
         System.out.println("Students with age >20: "+age20);
+
+        final Set<StudentDTO> studentDTOS= people.stream().map(c -> {
+           final StudentDTO studentDTO= new StudentDTO(c.getId(),c.getName(),c.getAge(),c.getGender());
+           return studentDTO;
+        }).collect(Collectors.toSet());
+
+        studentDTOS.forEach(c -> System.out.println(c.getId()));
     }
     private static Set<StudentDTO> java8StreamAPIDemo(){
         final Set<Student> students= new HashSet<>();
