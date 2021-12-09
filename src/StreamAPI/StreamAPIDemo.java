@@ -13,11 +13,11 @@ public class StreamAPIDemo {
                 .collect(Collectors.toList());
         males.forEach(s -> System.out.println(s));
 
-        //
-//        List<Student> age20= people.stream()
-//                .filter(person -> person.getAge()>20)
-
-//        age20.forEach(s-> System.out.println(s));
+        //Students with age >20
+        long age20= people.stream()
+                .filter(person -> person.getAge()>20)
+                .count();
+        System.out.println("Students with age >20: "+age20);
     }
     private static List<Student> getStudent(){
         return List.of(
